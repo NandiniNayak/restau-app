@@ -2,3 +2,23 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+
+.btn-primary {
+    color: #fff;
+    background-color: green;
+    border-color: green;
+}
+
+.navbar-default {
+    background-color: purple;
+    border-color: black;
+}
+
+h1{
+    color: pink;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}

@@ -1,0 +1,17 @@
+<%= simple_form_for(@order) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <h4> Please choose an item from the menu dropdown</h4>
+      <%= f.association :menu %>
+    
+      <%= f.input :quantity , placeholder: "Enter the total number" %>
+      <%= f.input :note , placeholder: "Please provide additional information if any" %>
+      <%= f.input :time , collection: ["Breakfast","Recess", "Lunch"]%>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

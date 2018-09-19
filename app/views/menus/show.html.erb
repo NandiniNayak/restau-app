@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @menu.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @menu.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @menu.price %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @menu.category %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @menu.availability %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @menu.user.email %>
+</p>
+
+<p>
+  <%= image_tag(@menu.image , width: "30%" , height: "30%") %>
+</p>
+
+<%= link_to 'Edit', edit_menu_path(@menu) %> |
+<%= link_to 'Back', menus_path %>

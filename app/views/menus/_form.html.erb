@@ -1,0 +1,16 @@
+<%= simple_form_for(@menu) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name , placeholder: "Enter the item name" %>
+    <%= f.input :description, placeholder: "Enter the ingredients" %>
+    <%= f.input :price ,placeholder: "Enter the price for the item in numbers" %>
+    <%= f.input :category , collection: ["Cold Drinks" , "Hot Beverages" , "Sandwiches", "Desserts"] %>
+    <%= f.input :availability %>
+    <%= f.input :image , as: :file %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
